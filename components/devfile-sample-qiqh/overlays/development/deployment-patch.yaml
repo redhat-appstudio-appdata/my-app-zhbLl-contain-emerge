@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-qiqh
+  namespace: skhileri-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d8f52cb2253f81e24d9eff53868fd78041e246acbb3f03d7eca5f2c3c5e22bed
+        name: my-nodejs
+        resources: {}
+status: {}
