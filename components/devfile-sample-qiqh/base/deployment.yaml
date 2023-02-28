@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-qiqh
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:zhbLl-devfile-sample-qiqh
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d8f52cb2253f81e24d9eff53868fd78041e246acbb3f03d7eca5f2c3c5e22bed
         name: my-nodejs
         ports:
         - containerPort: 3001
